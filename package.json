@@ -1,0 +1,22 @@
+{
+  "name": "crypto-monitoring",
+  "version": "1.0.0",
+  "description": "Serverless function which poll CoinApi to fetch current rate and display prometheus's metrics",
+  "main": "index.js",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "dependencies": {
+    "cloud-functions-runtime-config": "^0.4.0",
+    "prom-client": "^11.3.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

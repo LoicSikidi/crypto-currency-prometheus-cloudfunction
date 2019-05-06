@@ -1,0 +1,10 @@
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['docker.for.mac.localhost:9090']
+  - job_name: 'crypto-currency'
+    scheme: https
+    scrape_interval: 30m
+    static_configs:
+      - targets: ['europe-west1-${PROJECT}.cloudfunctions.net:443']
